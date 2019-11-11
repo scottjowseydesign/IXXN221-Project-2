@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>fixie & co - Wellington's Premier Bike Shop</title>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class = "logo">
+        <a href = "index.html">fixie & co.</a>
+      </div>
+      <div id = "links">
+        <a href = "about.html">about</a>
+        <a href = "shop.html">shop</a>
+        <a href = "#sidebar" onclick = "openNav()" >cart</a>
+      </div>
+    </nav>
+    <div class = "sidebar" id = "sidebar">
+      <div class = "topbar">
+        <h2>cart</h2>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      </div>
+      <div class = "product-bar">
+        <div class = "purchase" id ="purchase">
+          <div class = "purchase-image">
+            <img src = "images/mountain2.png" />
+          </div>
+          <div class = "purchase-info">
+            <h2>surly bridge club 700c</h2>
+            <p>$1049.99</p>
+            <div class = "more-purchase-info">
+              <p>qty: 1</p>
+              <a href = "#sidebar">remove</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "checkout-link">
+        <a href = "contact.html">checkout  •   $1049.99</a>
+      </div>
+    </div>
+    <div class = "leftbar" id = "leftbar">
+    </div>
+    <div class = "product-items">
+      <div class = "scroll-box">
+        <div class = "product-nav">
+          <a href = "index.html">home</a>
+          <p>/</p>
+          <a href = "shop.html">shop</a>
+          <p>/</p>
+          <a href = "product.html"><p>surly bridge club 700c</p></a>
+        </div>
+        <img src = "images/mountain2.png" />
+        <img src = "images/product2.jpg" id = "product" />
+        <img src = "images/product3.jpg" id = "product"/>
+      </div>
+      <div class = "fixed-box">
+        <div class = "product-title">
+          <h1>surly bridge club 700c</h1>
+          <div class = "product-prices">
+            <p>$1049.99</p>
+            <h3>$1349.99</h3>
+          </div>
+        </div>
+        <div class = "quantity-count">
+          <p>quantity</p>
+          <div class = "qty-count">
+              <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+              <input type="number" id="number" value="0" />
+              <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+          </div>
+        </div>
+        <div class = "cart-button">
+          <a href = "#sidebar" onclick = "openNav()">add to cart</a>
+        </div>
+        <div class = "description-title">
+          <h1>description</h1>
+        </div>
+        <div class = "description-text">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            <br></br>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class = "logo" >
+      <h1>fixie & co.</h1>
+      <p>riding towards a greener <br> tomorrow</p>
+    </div>
+    <div class = "contact">
+      <div class = "footer-box">
+        <div class = "footer-title">
+          <h2>contact</h2>
+        </div>
+        <div class = "footer-info">
+          <p>(04) 387 3721</p>
+          <p>hello@fixieandco.nz</p>
+        </div>
+      </div>
+      <div class = "footer-box">
+        <div class = "footer-title">
+          <h2>bricks</h2>
+        </div>
+        <div class = "footer-info">
+          <p>151 Cuba Street</p>
+          <p>Te Aro</p>
+          <p>Wellington 6011</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</html>
